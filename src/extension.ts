@@ -9,8 +9,8 @@ const SettingState1Text: string = "toggle.settingState1Text";
 const SettingState2Text: string = "toggle.settingState2Text";
 const State1Default: string = "state1";
 const State2Default: string = "state2";
-const StateOn: string = "$(eye)";
-const StateOff: string = "$(eye-closed)";
+const StateOn: string = "$(circle-large-filled)";
+const StateOff: string = "$(circle-large)";
 
 type ToggleSetting = {
   title: string;
