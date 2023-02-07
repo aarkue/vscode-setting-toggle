@@ -92,9 +92,8 @@ function showInStatusBar() {
     if (config.get(setting.statusBar.config) && settingTitle) {
       // icon at the status bar for boolean status
       const state = config.get(settingTitle);
-      if (state !== undefined && typeof state === "boolean") {
+      // Use truthy-ness of value as indicator (even for non-boolean settings)
         setting.statusBar.item.text = setting.statusBar.text + ": " + ( state ? StateOn : StateOff );
-      }
       setting.statusBar.item.show();
     } else {
       setting.statusBar.item.hide();
